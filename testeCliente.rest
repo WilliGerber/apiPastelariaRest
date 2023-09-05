@@ -22,7 +22,7 @@ PUT http://127.0.0.1:8000/cliente/2 HTTP/1.1
 content-type: application/json
 
 {
-    "nome": ."Coca-Cola",
+    "nome": "Coca-Cola",
     "cpf": "058.026.209-00",
     "telefone": "48999990015",
     "compra_fiado": 58.5,
