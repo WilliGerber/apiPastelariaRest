@@ -9,21 +9,21 @@ POST http://127.0.0.1:8000/produto/ HTTP/1.1
 content-type: application/json
 
 {
-    "nome": "Coca-Cola",
-    "descricao": "Refrigerante",
+    "nome": "Guaraná",
+    "descricao": "Refrigerante Guaraná",
     "foto": "foto da lata",
-    "valor_unitario": 5.50,
+    "valor_unitario": 5.50
 }
     
 ### Verbo PUT – atualiza
-PUT http://127.0.0.1:8000/produto/2 HTTP/1.1
+PUT http://127.0.0.1:8000/produto/1 HTTP/1.1
 content-type: application/json
 
 {
     "nome": "Coca-Cola",
     "descricao": "Refrigerante",
     "foto": "foto da lata",
-    "valor_unitario": 5.50,
+    "valor_unitario": 5.50
 }
 
 ### Verbo DELETE - excluir
