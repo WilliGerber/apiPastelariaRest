@@ -1,11 +1,31 @@
 ### Verbo GET – listar todos
 GET http://localhost:8000/cliente/ HTTP/1.1
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+
+### Verbo GET – listar todos
+curl -X 'GET' \
+    'http://localhost:8000/cliente/' \
+    -H 'accept: application/json' \
+    -H 'x-token: abcBolinhasToken' \
+    -H 'x-key: abcBolinhasKey'
 
 ### Verbo GET – listar um
 GET http://localhost:8000/cliente/1 HTTP/1.1
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+
+### Verbo GET – listar todos
+curl -X 'GET' \
+    'http://localhost:8000/cliente/' \
+    -H 'accept: application/json' \
+    -H 'x-token: abcBolinhasToken' \
+    -H 'x-key: abcBolinhasKey'
 
 ### Verbo POST – adicionar
 POST http://127.0.0.1:8000/cliente/ HTTP/1.1
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
 content-type: application/json
 
 {
@@ -17,8 +37,17 @@ content-type: application/json
     "senha": "1234"
 }
 
+### Verbo GET – listar todos
+curl -X 'POST' \
+    'http://localhost:8000/cliente/' \
+    -H 'accept: application/json' \
+    -H 'x-token: abcBolinhasToken' \
+    -H 'x-key: abcBolinhasKey'
+
 ### Verbo PUT – atualiza
 PUT http://127.0.0.1:8000/cliente/1 HTTP/1.1
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
 content-type: application/json
 
 {
@@ -30,5 +59,22 @@ content-type: application/json
     "senha": "1234"
 }
 
+### Verbo GET – listar todos
+curl -X 'PUT' \
+    'http://localhost:8000/cliente/' \
+    -H 'accept: application/json' \
+    -H 'x-token: abcBolinhasToken' \
+    -H 'x-key: abcBolinhasKey'
+
+
 ### Verbo DELETE - excluir
-DELETE http://127.0.0.1:8000/cliente/2 HTTP/1.1
+DELETE http://127.0.0.1:8000/cliente/1 HTTP/1.1
+x-token: abcBolinhasToken
+x-key: abcBolinhasKey
+
+### Verbo GET – listar todos
+curl -X 'DELETE' \
+    'http://localhost:8000/cliente/' \
+    -H 'accept: application/json' \
+    -H 'x-token: abcBolinhasToken' \
+    -H 'x-key: abcBolinhasKey'
