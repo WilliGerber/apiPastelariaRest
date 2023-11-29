@@ -25,7 +25,7 @@ X_KEY = os.getenv("X_KEY")
 # Caso seja diferente de sqlite
 DB_HOST = os.getenv("DB_HOST")
 DB_USER = os.getenv("DB_USER")
-DB_PASS = quote(os.getenv("DB_PASS"))
+DB_PASS = quote(os.getenv("DB_PASS").encode('utf-8'))
 
 # Ajusta STR_DATABASE conforme gerenciador escolhido
 if DB_SGDB == 'sqlite': # SQLite

@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 
 class Cliente(BaseModel):
-    id_produto: int = None
+    id_cliente: int = None
     nome: str
     cpf: str
     telefone: str
